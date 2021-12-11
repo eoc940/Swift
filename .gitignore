@@ -23,6 +23,11 @@ Icon
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
 
+# additional
+.contents.xcworkspacedata
+.contents.xcplayground
+
+
 # Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
