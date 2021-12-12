@@ -16,3 +16,4 @@ let myRealName : (String) -> String = {
 }
 
 print(myRealName("쩡대리"))
+
