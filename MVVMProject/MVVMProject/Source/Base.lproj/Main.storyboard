@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVVMProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idK-km-yMs">
+                                <rect key="frame" x="186.5" y="344" width="41.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xY6-yu-RWZ">
+                                <rect key="frame" x="180.5" y="425" width="53" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Now"/>
+                                <connections>
+                                    <action selector="onNow" destination="BYZ-38-t0r" eventType="touchUpInside" id="dlH-iG-C5g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPS-vv-Ehh">
+                                <rect key="frame" x="52.5" y="595" width="88" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yesterday"/>
+                                <connections>
+                                    <action selector="onYesterday" destination="BYZ-38-t0r" eventType="touchUpInside" id="OKb-dZ-Dxf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgb-RH-nqp">
+                                <rect key="frame" x="273.5" y="595" width="89" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tomorrow"/>
+                                <connections>
+                                    <action selector="onTomorrow" destination="BYZ-38-t0r" eventType="touchUpInside" id="tL2-Vw-Iio"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xY6-yu-RWZ" firstAttribute="leading" secondItem="aPS-vv-Ehh" secondAttribute="trailing" constant="40" id="OPF-ba-l9m"/>
+                            <constraint firstItem="hgb-RH-nqp" firstAttribute="leading" secondItem="xY6-yu-RWZ" secondAttribute="trailing" constant="40" id="WGp-nN-muu"/>
+                            <constraint firstItem="xY6-yu-RWZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aOf-ZY-r1w"/>
+                            <constraint firstItem="idK-km-yMs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gqu-BY-u9d"/>
+                            <constraint firstItem="idK-km-yMs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="l9u-pI-OIa"/>
+                            <constraint firstItem="xY6-yu-RWZ" firstAttribute="top" secondItem="idK-km-yMs" secondAttribute="bottom" constant="60" id="nne-Yh-PeJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aPS-vv-Ehh" secondAttribute="bottom" constant="236" id="oNp-u5-DhT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hgb-RH-nqp" secondAttribute="bottom" constant="236" id="r7m-Yw-dQs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datetimeLabel" destination="idK-km-yMs" id="lux-D2-hBg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="102.45535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
