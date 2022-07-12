@@ -1,6 +1,6 @@
 import UIKit
 
-@@discardableResult
+@discardableResult
 func sayHelloString() -> String {
     print("hi")
     return "안녕하세요"
