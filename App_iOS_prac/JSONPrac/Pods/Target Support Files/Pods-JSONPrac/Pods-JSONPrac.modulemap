@@ -1,6 +1,0 @@
-framework module Pods_JSONPrac {
-  umbrella header "Pods-JSONPrac-umbrella.h"
-
-  export *
-  module * { export * }
-}

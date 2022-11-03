@@ -1,6 +1,0 @@
-framework module Pods_JeongTutorial {
-  umbrella header "Pods-JeongTutorial-umbrella.h"
-
-  export *
-  module * { export * }
-}
